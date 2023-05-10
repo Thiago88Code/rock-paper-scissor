@@ -1,0 +1,108 @@
+.scoreCtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.score h3 {
+    margin-top: 0;
+    padding: 5px 5px;
+    background-color: #181848;
+    color: #fff;
+}
+
+.score {
+    padding: 3px 3px;
+
+}
+
+.score {
+    width: 100px;
+    background-color: #fff;
+    margin-bottom: 60px;
+
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    height: 100px;
+}
+
+.playerHand,
+.computerHand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.midCol {
+    color: #fff;
+    max-width: 400px;
+    font-size: large;
+}
+
+.playerShake {
+    animation: playerShakeAnimation 0.8s ease-in-out infinite;
+}
+
+@keyframes playerShakeAnimation {
+
+    0%,
+    100% {
+        transform: rotate(100deg);
+    }
+
+    50% {
+        transform: rotate(80deg);
+    }
+}
+
+.computerShake {
+    animation: computerShakeAnimation 0.8s ease-in-out infinite;
+}
+
+@keyframes computerShakeAnimation {
+
+    0%,
+    100% {
+        transform: scaleY(-1) rotate(-80deg);
+    }
+
+    50% {
+        transform: scaleY(-1) rotate(-100deg);
+    }
+}
+
+.winnerAnimation {
+    animation: winner 2s ease-in-out;
+}
+
+@keyframes winner {
+    30% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-20deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(20deg) scale(1.1);
+    }
+    
+    70% {
+        transform: rotate(0deg) scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
