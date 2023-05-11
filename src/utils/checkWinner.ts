@@ -5,12 +5,12 @@ export const checkWinner = (
     playerHand: string,
     computerHand: string
 ) => {
-    if (playerHand === 'rock' && computerHand === 'rock') {
+    if (playerHand === 'rock' && computerHand === 'rock') { 
         dispatch({ type: OptionActionKind.DRAW, payload: 'No one Wins! We have a draw!' })
     } else if (playerHand === 'paper' && computerHand === 'paper') {
         dispatch({ type: OptionActionKind.DRAW, payload: 'No one Wins! We have a draw!' })
     } else if (playerHand === 'scissors' && computerHand === 'scissors') {
-        dispatch({ type: OptionActionKind.DRAW, payload: 'No one Wins!! We have a draw!' })
+        dispatch({ type: OptionActionKind.DRAW, payload: 'No one Wins! We have a draw!' })
     } else if (playerHand === 'rock' && computerHand === 'paper') {
         dispatch({ type: OptionActionKind.COMPUTER_WINS, payload: 'Computer Wins! Paper beats rock!' })
     } else if (playerHand === 'paper' && computerHand === 'rock') {

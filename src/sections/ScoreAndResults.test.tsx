@@ -124,4 +124,5 @@ describe('ScoreAndResults', () => {
         expect(screen.getAllByTestId(/scissors/i)).toHaveLength(2)//icons
 
     })
+    
 })

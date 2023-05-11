@@ -1,5 +1,5 @@
 import { IInitialState } from "../context/optionsContextTypes";
-import { ActionTypes, OptionActionKind} from "./scoreReducerTypes";
+import { ActionTypes, OptionActionKind } from "./scoreReducerTypes";
 
 export default function scoreReducer(state: IInitialState, action: ActionTypes) {
 
@@ -10,7 +10,12 @@ export default function scoreReducer(state: IInitialState, action: ActionTypes) 
             return {
                 ...state,
                 selectedHand: true,
-                playerHand: payload
+                playerHand: payload,
+                computerHand: 0,
+                results: {
+                    winner: '',
+                    message: ''
+                }
             };
         case OptionActionKind.UPDATE_COMPUTER_CHOICE:
             return {
@@ -20,7 +25,8 @@ export default function scoreReducer(state: IInitialState, action: ActionTypes) 
         case OptionActionKind.RUN_TIMER:
             return {
                 ...state,
-                runTimer: payload
+                runTimer: payload,
+                selectedHand: false
             };
         case OptionActionKind.DRAW:
             return {
@@ -33,7 +39,7 @@ export default function scoreReducer(state: IInitialState, action: ActionTypes) 
         case OptionActionKind.PLAYER_WINS:
             return {
                 ...state,
-                score:{
+                score: {
                     ...state.score,
                     player: state.score.player + 1
                 },
@@ -45,7 +51,7 @@ export default function scoreReducer(state: IInitialState, action: ActionTypes) 
         case OptionActionKind.COMPUTER_WINS:
             return {
                 ...state,
-                score:{
+                score: {
                     ...state.score,
                     computer: state.score.computer + 1
                 },

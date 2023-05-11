@@ -64,7 +64,7 @@ export const ScoreAndResults = () => {
 
             <div className={styles.results}>
                 <div className={`${styles.playerHand} ${winner === 'Player' ? styles.winnerAnimation : ''}`}>
-                    <div className={styles.playerShake}>
+                    <div className={styles.playerShake} data-testid="playerShake">
                         {runTimer && optionContext.options[0].icon}
                     </div>
                     {!runTimer && playerHandIcon && (
@@ -87,10 +87,10 @@ export const ScoreAndResults = () => {
                 </div>
 
                 <div className={`${styles.computerHand} ${winner === 'Computer' ? styles.winnerAnimation : ''}`}>
-                    <div className={styles.computerShake}>
+                    <div className={styles.computerShake} data-testid="computerShake">
                         {runTimer && optionContext.options[0].icon}
                     </div>
-                    {!runTimer && computerHandIcon && (
+                    {winner !== "" && (
                         <>
                             <div>{computerHandIcon}</div>
                             <p>{computerHandName}</p>
