@@ -8,7 +8,7 @@ scissors beats paper, and paper beats rock.
 
 ### 📋 Prerequisites
 
-You must have Node and Npm previously installed
+You must have Node and Npm previously installed.
 Recomended Node version: 20.0.0
 
 ### 🔧 Installing all dependencies using npm:
