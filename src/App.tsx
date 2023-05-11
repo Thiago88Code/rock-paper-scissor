@@ -11,8 +11,8 @@ function App() {
         <h2>ROCK, PAPER, SCISSORS</h2>
         <p>React Typescript Game</p>
       </div>
-      <ScoreAndResults/>
-      <ChooseAndPlay/>
+      <ScoreAndResults />
+      <ChooseAndPlay />
     </div>
   )
 }

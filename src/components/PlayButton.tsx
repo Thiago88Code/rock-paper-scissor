@@ -17,7 +17,6 @@ export const PlayButton = () => {
             return
         }
     }
-    console.log(optionContext.state)
 
     return (
         <>

@@ -1,8 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { describe, it, vi } from 'vitest'
 import { OptionsProvider, useOptions } from './optionContext'
-// 1 - faço um mock
-// esse mock assume o initialState sem precisar importá-lo
+
 vi.mock('./initialstateContextValues', () => {
     return {
         initialState: {
@@ -21,8 +20,6 @@ vi.mock('./initialstateContextValues', () => {
     }
 })
 
-// 2 - monto o componente de teste 
-// o useOptions() vai buscar o meu mock, ou seja o "optionContext.state" aponta para para o mock acima
 function TestingComponent() {
     const optionContext = useOptions()
 
@@ -35,7 +32,6 @@ function TestingComponent() {
     )
 }
 
-// 3 - renderizo o componente dentro do <OptionsProvider> 
 describe('scoreReducer', () => {
     it('should render the component with the context initial values', () => {
         render(
@@ -49,4 +45,3 @@ describe('scoreReducer', () => {
     })
 })
 
-// Poderia não criar o mock, mas ele é útil para mostrar q o objeto inicial pode ser alterado através do "Context"

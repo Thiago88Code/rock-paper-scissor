@@ -3,8 +3,6 @@ import { fireEvent, render, screen, act } from "@testing-library/react";
 import { OptionsProvider } from "../context/optionContext";
 import { ScoreAndResults } from "./ScoreAndResults";
 import { ChooseAndPlay } from "./ChooseAndPlay";
-//import { generateComputerHand } from "../utils/generateComputerHand";
-
 
 describe('ScoreAndResults', () => {
 
@@ -12,7 +10,7 @@ describe('ScoreAndResults', () => {
         generateComputerHand: () => 0,
     }))
 
-    it('should display 2 seconds on the screen after we wait 1 second', () => {
+    it('Should display 2 seconds on the screen after we wait 1 second', () => {
         vi.useFakeTimers()
         render(
             <OptionsProvider>
@@ -36,7 +34,7 @@ describe('ScoreAndResults', () => {
         expect(screen.getByTestId("timer")).toHaveTextContent("2")
     })
 
-    it('should display 1 second on the screen after we wait 2 second', () => {
+    it('Should display 1 second on the screen after we wait 2 second', () => {
         vi.useFakeTimers()
         render(
             <OptionsProvider>
@@ -60,7 +58,7 @@ describe('ScoreAndResults', () => {
         expect(screen.getByTestId("timer")).toHaveTextContent("1")
     })
 
-    it('should display the score, icon and message after we wait 3 second. Player wins case', () => {
+    it('Should display the score, icon and message after we wait 3 second. Player wins case', () => {
         vi.useFakeTimers()
         render(
             <OptionsProvider>
@@ -83,8 +81,9 @@ describe('ScoreAndResults', () => {
 
         expect(screen.getByText(/Player wins/i)).toBeInTheDocument()//message
         expect(screen.getByText(/Paper beats rock!/i)).toBeInTheDocument()//message
-        expect(screen.getByText(/Player:1/i)).toBeInTheDocument()//score
-        expect(screen.getByText(/Computer:0/i)).toBeInTheDocument()//score
+        expect(screen.getByText('Player: 1')).toBeInTheDocument()//score
+        expect(screen.getByText('Computer: 0')).toBeInTheDocument()//score
+
         // pick the first "paper" up, from the top to bottom.
         expect(screen.getAllByTestId(/rock/i)[0]).toBeVisible()//icons
         expect(screen.getAllByTestId(/paper/i)[0]).toBeVisible()//icons
@@ -92,7 +91,7 @@ describe('ScoreAndResults', () => {
         expect(screen.getAllByTestId(/paper/i)).toHaveLength(2)//icons
 
     })
-    it('should display the score, icon and message after we wait 3 second. Computer wins case', () => {
+    it('Should display the score, icon and message after we wait 3 second. Computer wins case', () => {
         vi.useFakeTimers()
         render(
             <OptionsProvider>
@@ -115,8 +114,9 @@ describe('ScoreAndResults', () => {
 
         expect(screen.getByText(/Computer wins/i)).toBeInTheDocument()//message
         expect(screen.getByText(/Rock beats scissors!/i)).toBeInTheDocument()//message
-        expect(screen.getByText(/Player:0/i)).toBeInTheDocument()//score
-        expect(screen.getByText(/Computer:1/i)).toBeInTheDocument()//score
+        expect(screen.getByText('Player: 0')).toBeInTheDocument()//score
+        expect(screen.getByText('Computer: 1')).toBeInTheDocument()//score
+
         // pick the first "paper" up, from the top to bottom.
         expect(screen.getAllByTestId(/rock/i)[0]).toBeVisible()//icons
         expect(screen.getAllByTestId(/scissors/i)[0]).toBeVisible()//icons

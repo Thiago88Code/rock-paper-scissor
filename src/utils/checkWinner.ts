@@ -5,7 +5,7 @@ export const checkWinner = (
     playerHand: string,
     computerHand: string
 ) => {
-    if (playerHand === 'rock' && computerHand === 'rock') { 
+    if (playerHand === 'rock' && computerHand === 'rock') {
         dispatch({ type: OptionActionKind.DRAW, payload: 'No one Wins! We have a draw!' })
     } else if (playerHand === 'paper' && computerHand === 'paper') {
         dispatch({ type: OptionActionKind.DRAW, payload: 'No one Wins! We have a draw!' })
