@@ -6,8 +6,7 @@ options: rock (represented by a closed fist), paper (represented by an open hand
 objective of the game is to choose the winning option to defeat the opponent. For example, rock beats scissors, 
 scissors beats paper, and paper beats rock.
 
-
-  <img width="50" heigth="50" src="C:\Users\thiag\OneDrive\Documentos\Dev\Projects\rock-paper-scissor\public\Screenshot 2023-05-11 203642.png" />&nbsp;&nbsp;
+public/Screenshot 2023-05-11 203642.png
 
 ### 📋 Prerequisites
 
