@@ -8,7 +8,11 @@ export const ChooseAndPlay = () => {
     const OptionsContext = useOptions()
 
     const HandOptionsArray = OptionsContext.options.map((hand, i) => {
-        return <HandSelection name={hand.name} icon={hand.icon} handChoiceIndex={i} />
+        return (
+            <div key={hand.name}>
+                <HandSelection name={hand.name} icon={hand.icon} handChoiceIndex={i} />
+            </div>
+        )
     })
 
     return (
@@ -16,7 +20,7 @@ export const ChooseAndPlay = () => {
             <div className={styles.choiceBtnCtn}>
                 {HandOptionsArray}
             </div>
-            <PlayButton/>
+            <PlayButton />
         </>
     )
 }
