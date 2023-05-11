@@ -1,4 +1,4 @@
-# rock-paper-scissor
+# Rock-paper-scissor
 
 "Rock, paper, scissors" is a simple and popular game in which two players choose between three
 options: rock (represented by a closed fist), paper (represented by an open hand), and scissors 
@@ -34,6 +34,7 @@ npm run test
 * [React](https://react.dev/) - The web framework
 * [Vite](https://vitejs.dev/guide/) - Build tool
 * [Vitest](https://vitest.dev/) - Testing framework
+
 
 
 ⌨️ com ❤️ por [Thiago Souza](https://github.com/Thiago88Code) 😊
