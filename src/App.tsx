@@ -8,7 +8,7 @@ function App() {
   return (
     <div className={styles.container}>
       <div className={styles.titleCtn}>
-        <h2>ROCK, PAPER, SCISSOR</h2>
+        <h2>ROCK, PAPER, SCISSORS</h2>
         <p>React Typescript Game</p>
       </div>
       <ScoreAndResults/>
@@ -16,6 +16,5 @@ function App() {
     </div>
   )
 }
-
 
 export default App

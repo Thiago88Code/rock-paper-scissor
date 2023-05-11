@@ -54,11 +54,11 @@ export const ScoreAndResults = () => {
             <div className={styles.scoreCtn}>
                 <div className={styles.score}>
                     <h3>Score</h3>
-                    <p>Player:{playerScore}</p>
+                    <p>Player: {playerScore}</p>
                 </div>
                 <div className={styles.score}>
                     <h3>Score</h3>
-                    <p>Computer:{computerScore}</p>
+                    <p>Computer: {computerScore}</p>
                 </div>
             </div>
 
