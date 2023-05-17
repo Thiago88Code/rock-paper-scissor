@@ -31,7 +31,7 @@ npm run test
 ## 🛠️ Built with 
 
 * [Typescript](https://www.typescriptlang.org/) - Language
-* [React](https://react.dev/) - The web framework
+* [React](https://react.dev/) - JavaScript library
 * [Vite](https://vitejs.dev/guide/) - Build tool
 * [Vitest](https://vitest.dev/) - Testing framework
 
