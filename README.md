@@ -6,10 +6,8 @@ options: rock (represented by a closed fist), paper (represented by an open hand
 objective of the game is to choose the winning option to defeat the opponent. For example, rock beats scissors, 
 scissors beats paper, and paper beats rock.
 
-<<<<<<< HEAD
+https://github.com/Thiago88Code/rock-paper-scissor/assets/74308939/16e0f659-b0f2-4a6f-87a7-8db53b0f5cbf
 
-=======
->>>>>>> 7bb9a0d9e63e9777521b720ffb1ebbc76ba55166
 ### 📋 Prerequisites
 
 You must have Node and Npm previously installed.
