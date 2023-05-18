@@ -29,10 +29,10 @@ export const ScoreAndResults = () => {
 
     useEffect(() => {
         if (runTimer) {
-            const newIntervalid = setInterval(() => {
+            const newIntervalId = setInterval(() => {
                 setTimer((previousTimer) => {
                     if (previousTimer === 1) {
-                        clearInterval(newIntervalid)
+                        clearInterval(newIntervalId)
                     }
                     return previousTimer - 1
                 })
