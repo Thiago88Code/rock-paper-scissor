@@ -31,8 +31,7 @@ export function OptionsProvider(props: Props) {
 
     return <OptionsContext.Provider value={contextValue}>{props.children}</OptionsContext.Provider>
 }
-
-// hook in order to use my context out of hear
+// hook to access the context
 export function useOptions() {
     const context = useContext(OptionsContext)
     return context

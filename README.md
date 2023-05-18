@@ -6,7 +6,10 @@ options: rock (represented by a closed fist), paper (represented by an open hand
 objective of the game is to choose the winning option to defeat the opponent. For example, rock beats scissors, 
 scissors beats paper, and paper beats rock.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7bb9a0d9e63e9777521b720ffb1ebbc76ba55166
 ### 📋 Prerequisites
 
 You must have Node and Npm previously installed.
@@ -32,7 +35,7 @@ npm run test
 ## 🛠️ Built with 
 
 * [Typescript](https://www.typescriptlang.org/) - Language
-* [React](https://react.dev/) - The web framework
+* [React](https://react.dev/) - JavaScript library
 * [Vite](https://vitejs.dev/guide/) - Build tool
 * [Vitest](https://vitest.dev/) - Testing framework
 
