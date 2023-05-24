@@ -10,7 +10,7 @@ https://github.com/Thiago88Code/rock-paper-scissor/assets/74308939/16e0f659-b0f2
 
 ### 📋 Prerequisites
 
-You must have Node and Npm previously installed.
+You must have Node and Npm installed.
 Recomended Node version: 20.0.0
 
 ### 🔧 Installing all dependencies using npm:
